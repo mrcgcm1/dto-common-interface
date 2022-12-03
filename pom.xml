@@ -35,6 +35,17 @@
         </dependency>
 
     </dependencies>
-
+<!-- Questo plugin viene inserito per rendere disponibili le classi e togliere la caratteritica di progetto spring boot -->
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+                <configuration>
+                    <classifier>exec</classifier>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
 
 </project>
