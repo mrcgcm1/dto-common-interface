@@ -5,17 +5,17 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import java.util.UUID;
+import java.io.Serializable;
 
 @Data
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
-public class ValidateBeerOrderResponse {
+public class AllocateOrderResult implements Serializable {
 
-    static final long serialVersionUID = 7790538571145536435L;
+    private BeerOrderDto beerOrderDto;
 
-    private boolean result;
+    private Boolean allocationError = false;
 
-    private UUID orderId;
+    private Boolean pendingInventory = false;
 }
