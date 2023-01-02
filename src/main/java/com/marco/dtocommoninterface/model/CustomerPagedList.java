@@ -3,6 +3,7 @@ package com.marco.dtocommoninterface.model;
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.databind.JsonNode;
+import com.marco.dtocommoninterface.model.order.CustomerDto;
 import org.springframework.data.domain.PageImpl;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
@@ -25,7 +26,9 @@ public class CustomerPagedList extends PageImpl<CustomerDto> implements Serializ
                              @JsonProperty("sort") JsonNode sort,
                              @JsonProperty("first") boolean first,
                              @JsonProperty("numberOfElements") int numberOfElements) {
+
         super(content, PageRequest.of(number, size), numberOfElements);
+
     }
 
     public CustomerPagedList(List<CustomerDto> content, Pageable pageable, long numberOfElements) {
