@@ -10,7 +10,7 @@
 
     <groupId>com.marco</groupId>
     <artifactId>dto-common-interface</artifactId>
-    <version>0.0.1</version>
+    <version>0.1.0-SNAPSHOT</version>
 
     <name>dto-common-interface</name>
     <description>dto di utilizzo comune</description>
