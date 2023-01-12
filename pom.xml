@@ -14,7 +14,6 @@
 
     <name>dto-common-interface</name>
     <description>dto di utilizzo comune</description>
-
     <dependencies>
         <!-- https://mvnrepository.com/artifact/com.fasterxml.jackson.datatype/jackson-datatype-hibernate5 -->
         <dependency>
