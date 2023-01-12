@@ -5,12 +5,12 @@
     <parent>
         <artifactId>beer-service-bom-new</artifactId>
         <groupId>com.marco</groupId>
-        <version>1.0.5</version>
+        <version>1.0.9</version>
     </parent>
 
     <groupId>com.marco</groupId>
     <artifactId>dto-common-interface</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>0.0.1</version>
 
     <name>dto-common-interface</name>
     <description>dto di utilizzo comune</description>
